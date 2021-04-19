@@ -1,0 +1,132 @@
+<!-- Project on survey form-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>survey-form</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="survey_form" />
+</head>
+<body>
+<section>
+<header><h1 id="title">LUTH/CMUL MUSLIM COMMUNITY SCHOOLS</h1>
+<p id="description">OPEN DAY SURVEY FORM</p>
+</header>
+<div>
+<form id="survey-form">
+<div>
+<label id="name-label" for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Enter your name" required />
+</div>
+
+<div>
+<label id="email-label" for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email"   required />
+</div>
+
+<div>
+<label id="number-label" for="number">Pupils Age</label>
+<input type="number" name="number" id="number" placeholder="Age" min='10' max='99' required />
+</div>
+
+<div>
+<p>Which class is your child/ward?</p>
+<select id="dropdown" name="class" required>
+<option disabled selected value>Select class</option>
+<option value="basic 1">Basic 1</option>
+<option value="basic 2">Basic 2</option>
+<option value="basic 3">Basic 3</option>
+<option value="basic 4">Basic 4</option>
+<option value="basic 5">Basic 5</option>
+<option value="basic 6">Basic 6</option>
+</select>
+</div>
+
+<div>
+<p>Would you recommend our school to a friend.</p>
+<div>
+<label> 
+<input name="user-recommend" value="definitely" type="radio" checked="">
+Definitely
+</label>
+</div>
+<div>
+<label> 
+<input name="user-recommend" value="maybe" type="radio" checked="">
+Maybe
+</label>
+</div>
+
+<div>
+<label> 
+<input name="user-recommend" value="not sure" type="radio" checked="">
+Not sure
+</label>
+</div>
+
+</div>
+<div>
+<p>What is his/her favorite subject?</p>
+<select id="fav-sub" name="fav-sub" required>
+<option disabled selected value>Select favorite subject</option>
+<option value="Maths">Maths</option>
+<option value="English">English</option>
+<option value="SOS">Social Studies</option>
+<option value="French">French</option>
+</select>
+</div>
+
+<div>
+<p>What do you want improvement on?</p>
+
+<div>
+<label> 
+<input name="improve" value="Writing" type="checkbox" >
+Writing
+</label>
+</div>
+
+<div>
+<label> 
+<input name="improve" value="Arithmetics" type="checkbox" >
+Arithmetics
+</label>
+</div>
+
+<div>
+<label> 
+<input name="improve" value="Dictation" type="checkbox" >
+Dictation
+</label>
+</div>
+
+<div>
+<label> 
+<input name="improve" value="Reading" type="checkbox" >
+Reading
+</label>
+</div>
+
+<div>
+<label> 
+<input name="improve" value="Spelling" type="checkbox" >
+Spelling
+</label>
+</div>
+
+</div>
+
+<div>
+<textarea id="comment" name="comment" placeholder="Type in your comments."></textarea>
+</div>
+
+
+<div>
+<button id="submit" name="submit">SUBMIT</button>
+</div>
+</form>
+</div>
+</section>
+
+</body>
+
+</html>
